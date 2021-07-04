@@ -1,0 +1,11 @@
+{
+  "flowsToBeIgnored" : [
+      "Create Property"
+  ],
+  "rulesToBeIgnoredInFlows" : [
+      {
+        "flowname":"IdAssignment",
+        "rulename":"Hardcoded Ids"
+      }
+  ]
+}
