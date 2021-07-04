@@ -1,6 +1,6 @@
 {
   "flowsToBeIgnored" : [
-      "Create Property"
+      "Create Property", "mainflow"
   ],
   "rulesToBeIgnoredInFlows" : [
       {
