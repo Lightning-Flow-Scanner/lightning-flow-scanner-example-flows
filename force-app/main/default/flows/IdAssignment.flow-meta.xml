@@ -7,7 +7,6 @@
         <locationY>334</locationY>
         <actionName>NewTask</actionName>
         <actionType>quickAction</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>OwnerId</name>
             <value>
@@ -22,7 +21,6 @@
         <locationY>573</locationY>
         <actionName>NewNote</actionName>
         <actionType>quickAction</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>Title</name>
             <value>
@@ -30,7 +28,6 @@
             </value>
         </inputParameters>
     </actionCalls>
-    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>anyassignment</name>
         <label>anyassignment</label>
