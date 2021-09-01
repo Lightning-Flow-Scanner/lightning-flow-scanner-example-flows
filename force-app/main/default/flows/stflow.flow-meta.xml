@@ -10,6 +10,7 @@
             <operator>Assign</operator>
         </assignmentItems>
     </assignments>
+    <description>a description of stflow</description>
     <interviewLabel>stflow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>stflow</label>
     <processMetadataValues>
@@ -52,7 +53,7 @@
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>test</name>
         <dataType>String</dataType>
