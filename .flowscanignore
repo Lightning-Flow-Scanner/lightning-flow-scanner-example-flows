@@ -1,0 +1,20 @@
+{
+  "activeRules": [
+    "DMLStatementInLoop",
+    "DuplicateDMLOperationsByNavigation",
+    "HardcodedIds"
+  ],
+  "overrides": [
+      {
+          "flowName": "Create Property",
+          "results": [{
+              "ruleName" : "DuplicateDMLOperationsByNavigation",
+              "result":"error_creating_records"
+          },
+          {
+            "ruleName" : "DuplicateDMLOperationsByNavigation",
+            "result":"upload_picture"
+        }]
+      }
+  ]
+}
