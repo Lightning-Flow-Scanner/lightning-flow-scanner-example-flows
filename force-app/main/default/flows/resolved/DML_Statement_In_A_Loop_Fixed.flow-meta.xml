@@ -115,14 +115,6 @@
         <objectType>Account</objectType>
     </variables>
     <variables>
-        <name>createCase</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Case</objectType>
-    </variables>
-    <variables>
         <name>newCase</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
