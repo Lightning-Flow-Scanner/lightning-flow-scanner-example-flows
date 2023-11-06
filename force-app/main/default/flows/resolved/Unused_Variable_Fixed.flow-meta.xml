@@ -43,14 +43,4 @@
         </connector>
     </start>
     <status>Active</status>
-    <variables>
-        <name>anUnusedVariable</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <stringValue>hello world</stringValue>
-        </value>
-    </variables>
 </Flow>
