@@ -86,11 +86,11 @@
             <targetReference>dosomethingelse</targetReference>
         </faultConnector>
         <filterLogic>and</filterLogic>
-        <filters>
-            <field>Active__c</field>
+        <filters> 
+            <field>Industry</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Yes</stringValue>
+                <stringValue>None</stringValue>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
