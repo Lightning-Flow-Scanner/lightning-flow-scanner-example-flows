@@ -1,0 +1,19 @@
+{
+    "rules": {
+        "APIVersion": {},
+        "CopyAPIName": {},
+        "DMLStatementInLoop": {},
+        "DuplicateDMLOperation": {},
+        "FlowDescription": {},
+        "HardcodedId": {},
+        "MissingFaultPath": {},
+        "MissingNullHandler": {},
+        "SOQLQueryInLoop": {},
+        "UnconnectedElement": {},
+        "UnusedVariable": {},
+        "CustomNamingConvention":{
+            "severity": "error",
+            "path":"customrules/CustomRuleExample.ts"
+        }
+    }
+}
