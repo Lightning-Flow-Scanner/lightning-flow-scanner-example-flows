@@ -11,9 +11,6 @@
         "SOQLQueryInLoop": {},
         "UnconnectedElement": {},
         "UnusedVariable": {},
-        "CustomNamingConvention":{
-            "severity": "error",
-            "path":"customrules/CustomRuleExample.ts"
-        }
+        "FlowName": {}
     }
 }
