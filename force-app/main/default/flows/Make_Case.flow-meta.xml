@@ -18,10 +18,10 @@
         <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>58.0</apiVersion>
-    <description>This flow demonstrates how to resolve a violation of the rule &quot;Duplicate DML Operation&quot;.</description>
+    <description>Make a new Case simple</description>
     <environments>Default</environments>
-    <interviewLabel>Duplicate DML Operation Fixed {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Fix: Duplicate DML Operation</label>
+    <interviewLabel>Make_Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Make_Case</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -42,8 +42,34 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
+        <name>create_Case</name>
+        <label>Create Case</label>
+        <locationX>176</locationX>
+        <locationY>458</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>Account.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>DescriptionRq</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>createAccount</name>
-        <label>createAccount</label>
+        <label>Create Account</label>
         <locationX>176</locationX>
         <locationY>242</locationY>
         <connector>
@@ -63,7 +89,7 @@
     </recordCreates>
     <screens>
         <name>mock_screen_1</name>
-        <label>mock screen 1</label>
+        <label>Fill Company Information</label>
         <locationX>176</locationX>
         <locationY>134</locationY>
         <allowBack>true</allowBack>
@@ -75,7 +101,14 @@
         <fields>
             <name>account_name</name>
             <dataType>String</dataType>
-            <fieldText>account name</fieldText>
+            <fieldText>Company Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Description</name>
+            <dataType>String</dataType>
+            <fieldText>Description</fieldText>
             <fieldType>InputField</fieldType>
             <isRequired>false</isRequired>
         </fields>
@@ -84,12 +117,28 @@
     </screens>
     <screens>
         <name>mock_screen_2</name>
-        <label>mock screen 2</label>
+        <label>Make Case</label>
         <locationX>176</locationX>
         <locationY>350</locationY>
-        <allowBack>false</allowBack>
+        <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
+        <connector>
+            <targetReference>create_Case</targetReference>
+        </connector>
+        <fields>
+            <name>Subject</name>
+            <dataType>String</dataType>
+            <fieldText>Subject</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>DescriptionRq</name>
+            <fieldText>Description</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
