@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>51.0</apiVersion>
-    <description>This flow demonstrates how to resolve a violation of the rule &quot;Copy API Name&quot;.</description>
+    <description>This a demonstrates how to resolve a violation of the rule &quot;Copy API Name&quot;.</description>
     <environments>Default</environments>
     <interviewLabel>Fix: Copy API Name {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Fix: Copy API Name</label>
