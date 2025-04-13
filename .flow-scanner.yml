@@ -1,0 +1,40 @@
+rules:
+  APIVersion:
+    severity: error
+  AutoLayout:
+    severity: error
+  CopyAPIName:
+    severity: error
+  CyclomaticComplexity:
+    severity: error
+  DMLStatementInLoop:
+    severity: error
+  DuplicateDMLOperation:
+    severity: error
+  FlowDescription:
+    severity: error
+  FlowName:
+    severity: error
+  HardCodedId:
+    severity: error
+  InactiveFlow:
+    severity: error
+  MissingFaultPath:
+    severity: error
+  ProcessBuilder:
+    severity: error
+  RecursiveAfterUpdate:
+    severity: error
+  SameRecordFieldUpdates:
+    severity: error
+  SOQLQueryInLoop:
+    severity: error
+  TriggerOrder:
+    severity: error
+  UnconnectedElement:
+    severity: error
+  UnsafeRunningContext:
+    severity: error
+  UnusedVariable:
+    severity: error
+exceptions:
