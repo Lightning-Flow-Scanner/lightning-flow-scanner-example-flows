@@ -39,4 +39,6 @@ rules:
     severity: error
   GetRecordAllFields:
     severity: error
+  HardcodedUrl:
+    severity: error
 exceptions:
