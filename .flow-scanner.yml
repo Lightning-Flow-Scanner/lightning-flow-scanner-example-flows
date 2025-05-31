@@ -1,4 +1,6 @@
 rules:
+  ActionCallsInLoop:
+    severity: error
   APIVersion:
     severity: error
   AutoLayout:
@@ -15,7 +17,11 @@ rules:
     severity: error
   FlowName:
     severity: error
+  GetRecordAllFields:
+    severity: error
   HardcodedId:
+    severity: error
+  HardcodedUrl:
     severity: error
   InactiveFlow:
     severity: error
@@ -36,9 +42,5 @@ rules:
   UnsafeRunningContext:
     severity: error
   UnusedVariable:
-    severity: error
-  GetRecordAllFields:
-    severity: error
-  HardcodedUrl:
     severity: error
 exceptions:
