@@ -27,6 +27,8 @@ rules:
     severity: error
   MissingFaultPath:
     severity: error
+  MissingNullHandler:
+    severity: error
   ProcessBuilder:
     severity: error
   RecursiveAfterUpdate:
