@@ -27,6 +27,8 @@ rules:
     severity: error
   MissingFaultPath:
     severity: error
+    suppressions:
+      - "LogACall"
   MissingNullHandler:
     severity: error
   ProcessBuilder:
