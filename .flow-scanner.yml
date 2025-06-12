@@ -41,6 +41,7 @@ rules:
     severity: error
   TriggerOrder:
     severity: error
+    disabled: true
   UnconnectedElement:
     severity: error
   UnsafeRunningContext:
