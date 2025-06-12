@@ -28,7 +28,7 @@ rules:
   MissingFaultPath:
     severity: error
     suppressions:
-      - "LogACall"
+      - "Nebula__FlowLogEntry"
   MissingNullHandler:
     severity: error
   ProcessBuilder:

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+  <actionCalls>
+    <name>Log_Error</name>
+    <label>Log Error</label>
+    <locationX>0</locationX>
+    <locationY>0</locationY>
+    <actionName>Nebula__FlowLogEntry</actionName>
+    <actionType>apex</actionType>
+    <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    <inputParameters>
+      <name>flowName</name>
+      <value>
+        <stringValue>Test</stringValue>
+      </value>
+    </inputParameters>
+    <inputParameters>
+      <name>message</name>
+      <value>
+        <stringValue>Test</stringValue>
+      </value>
+    </inputParameters>
+    <nameSegment>Nebula__FlowLogEntry</nameSegment>
+    <offset>0</offset>
+    <storeOutputAutomatically>true</storeOutputAutomatically>
+  </actionCalls>
+  <apiVersion>64.0</apiVersion>
+  <assignments>
+    <name>Assign_Error</name>
+    <label>Assign Error</label>
+    <locationX>0</locationX>
+    <locationY>0</locationY>
+    <assignmentItems>
+      <assignToReference>GET_Opportunities.AccountId</assignToReference>
+      <operator>Assign</operator>
+      <value>
+        <stringValue>TEST</stringValue>
+      </value>
+    </assignmentItems>
+    <connector>
+      <targetReference>Log_Error</targetReference>
+    </connector>
+  </assignments>
+  <environments>Default</environments>
+  <interviewLabel>TEST Error Logging {!$Flow.CurrentDateTime}</interviewLabel>
+  <label>TEST Error Logging</label>
+  <processMetadataValues>
+    <name>BuilderType</name>
+    <value>
+      <stringValue>LightningFlowBuilder</stringValue>
+    </value>
+  </processMetadataValues>
+  <processMetadataValues>
+    <name>CanvasMode</name>
+    <value>
+      <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+    </value>
+  </processMetadataValues>
+  <processMetadataValues>
+    <name>OriginBuilderType</name>
+    <value>
+      <stringValue>LightningFlowBuilder</stringValue>
+    </value>
+  </processMetadataValues>
+  <processType>AutoLaunchedFlow</processType>
+  <recordLookups>
+    <name>GET_Opportunities</name>
+    <label>GET Opportunities</label>
+    <locationX>0</locationX>
+    <locationY>0</locationY>
+    <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+    <faultConnector>
+      <targetReference>Assign_Error</targetReference>
+    </faultConnector>
+    <getFirstRecordOnly>true</getFirstRecordOnly>
+    <object>Opportunity</object>
+    <storeOutputAutomatically>true</storeOutputAutomatically>
+  </recordLookups>
+  <start>
+    <locationX>0</locationX>
+    <locationY>0</locationY>
+    <connector>
+      <targetReference>GET_Opportunities</targetReference>
+    </connector>
+  </start>
+  <status>Draft</status>
+</Flow>
